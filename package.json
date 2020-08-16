@@ -15,7 +15,7 @@
     "flow-bin": "0.89.0",
     "flow-typed": "2.5.1",
     "husky": "1.2.1",
-    "jest-expo": "33.0.0",
+    "jest-expo": "36.0.0",
     "prettier": "^1.15.3",
     "react-test-renderer": "16.5.0"
   },
@@ -36,7 +36,7 @@
     ]
   },
   "dependencies": {
-    "expo": "^33.0.0",
+    "expo": "^36.0.0",
     "expo-cli": "^3.24.0",
     "lodash": "^4.17.20",
     "mobx": "5.8.0",

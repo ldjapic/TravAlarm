@@ -3,7 +3,7 @@
     "name": "React-Native-Seed",
     "slug": "React-Native-Seed",
     "privacy": "public",
-    "sdkVersion": "33.0.0",
+    "sdkVersion": "36.0.0",
     "platforms": ["ios", "android"],
     "version": "1.2.0",
     "orientation": "portrait",
