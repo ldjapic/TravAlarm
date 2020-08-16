@@ -1,0 +1,49 @@
+{
+  "name": "ReactNativeSeed",
+  "version": "1.2.0",
+  "private": true,
+  "devDependencies": {
+    "babel-eslint": "10.0.1",
+    "babel-preset-expo": "^5.0.0",
+    "eslint": "5.11.0",
+    "eslint-plugin-flowtype": "3.2.0",
+    "eslint-plugin-import": "2.14.0",
+    "eslint-plugin-jsx-a11y": "6.1.2",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-react": "7.11.1",
+    "eslint-plugin-react-native": "3.5.0",
+    "flow-bin": "0.89.0",
+    "flow-typed": "2.5.1",
+    "husky": "1.2.1",
+    "jest-expo": "33.0.0",
+    "prettier": "^1.15.3",
+    "react-test-renderer": "16.5.0"
+  },
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "eject": "expo eject",
+    "android": "expo android",
+    "ios": "expo ios",
+    "test": "yarn jest && flow && eslint .",
+    "jest": "node node_modules/jest/bin/jest.js",
+    "precommit": "yarn test"
+  },
+  "jest": {
+    "preset": "jest-expo",
+    "transformIgnorePatterns": [
+      "node_modules/(?!(react-native|lottie-react-native|expo|expo-react-native-adapter|react-native-iphone-x-helper|expo-font|expo-asset|expo-constants|react-native-maps|react-native-svg|react-native-branch|native-base-shoutem-theme|react-native-easy-grid|react-native-drawer|react-native-vector-icons|react-native-keyboard-aware-scroll-view|react-navigation|native-base|@expo|react-native-scrollable-tab-view)/)"
+    ]
+  },
+  "dependencies": {
+    "expo": "^33.0.0",
+    "expo-cli": "^3.24.0",
+    "lodash": "^4.17.20",
+    "mobx": "5.8.0",
+    "mobx-react": "5.4.3",
+    "native-base": "^2.13.13",
+    "react": "16.8.3",
+    "react-native": "^0.59.10",
+    "react-navigation": "^2.18.2"
+  }
+}
