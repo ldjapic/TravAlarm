@@ -1,5 +1,6 @@
 import * as Expo from "expo";
 import * as React from "react";
+import * as Font from 'expo-font';
 import { Provider } from "mobx-react/native";
 import { StyleProvider } from "native-base";
 
@@ -25,10 +26,10 @@ export default function(stores) {
 			this.loadFonts();
 		}
 		async loadFonts() {
-			await Expo.Font.loadAsync({
-				Roboto: require("native-base/Fonts/Roboto.ttf"),
-				Roboto_medium: require("native-base/Fonts/Roboto_medium.ttf"),
-				Ionicons: require("@expo/vector-icons/fonts/Ionicons.ttf"),
+			await Font.loadAsync({
+				Roboto: require("./Fonts/Roboto.ttf"),
+				Roboto_medium: require("./Fonts/Roboto_medium.ttf"),
+				Ionicons: require("./Fonts/Ionicons.ttf"),
 			});
 
 			this.setState({ isReady: true });
